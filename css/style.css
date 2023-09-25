@@ -51,7 +51,7 @@ body {
 }
 .menu-list {
     display: flex;
-    gap: 0 40px;
+    gap: 20px 40px;
     align-items: center;
     font-weight: 700;
 }
@@ -255,5 +255,137 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1469px){
+    .header__content-images img{
+        max-width: 100%;
+    }
+    .choose-color-list {
+        flex-wrap: wrap;
+    }
+    .title{
+        font-size: 180px;
+        transform: translate(135px, 25px);
+    }
+}
+@media (max-width: 1349px){
+    .title{
+        transform: none;
+        font-size: 140px;
+        padding-top: 25vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .title--pod{
+        z-index: -1;
+    }
+    .title--s{
+        transform: none;
+        position: relative;
+        z-index: -1;
+    }
+    .title--m{
+        transform: none;
+    }
+    .title--ax{
+        transform: none;
+    }
+}
+@media (max-width: 930px){
+    .title{
+        position: relative;
+        font-size: 100px;
+        padding: 0;
+        
+    }
+    .title--m{
+        padding-left: 15px;
+    }
+    .choose-color{
+        padding-bottom: 110px;
+    }
+}
+@media(max-width: 768px){
+    .choose-color{
+        padding-bottom: 60px;
+    }
+    .choose-color-list{
+        gap: 16px;
+    }
+    .main-title{
+        font-size: 36px;
+    }
+    .composition{
+        margin-bottom: 60px;
+    }
+    .case{
+        padding: 60px 0;
+    }
+    .energy-title{
+        padding-top: 60px;
+        margin-bottom: 20px;
+    }
+    .energy-num{
+        font-size: 110px;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 58px;
+    }
+
+}
+@media (max-width: 560px){
+    .choose-color-text{
+        margin-bottom: 40px;
+    }
+    .choose-color{
+        padding-bottom: 40px;
+    }
+    .case{
+        padding: 40px 0;
+    }
+    .composition-inner-text p{
+        width: 100%;
+    }
+    .composition-inner{
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    .menu-list{
+        flex-wrap: wrap;
+    }
+    .menu-item-btn{
+        margin-left: auto;
+    }
+    .menu-item-btn button{
+        width: 250px;
+    }
+    .menu-item:first-child{
+        margin-left: auto;
+    }
+    .header-top{
+        align-items: flex-start;
+    }
+    .header{
+        min-height: 70vh;
+    }
+}
+@media (max-width: 414px){
+    .main-title{
+        font-size: 28px;
+    }
+    .choose-color-title{
+        font-size: 28px;
+    }
+    .energy-num{
+        font-size: 92px;
+    }
+    .case img{
+        max-width: 100%;
+    }
 }
