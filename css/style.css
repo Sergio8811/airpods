@@ -372,7 +372,7 @@ body {
         align-items: flex-start;
     }
     .header{
-        min-height: 70vh;
+        min-height: 95vh;
     }
 }
 @media (max-width: 414px){
@@ -387,5 +387,10 @@ body {
     }
     .case img{
         max-width: 100%;
+    }
+}
+@media (max-width: 360px){
+    .title{
+        font-size: 50px;
     }
 }
